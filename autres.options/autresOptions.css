@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('Comfortaa-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('Comfortaa-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Medium';
+    src: url('Comfortaa-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('Comfortaa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    src: url('Comfortaa-SemiBold.ttf') format('truetype');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    margin: auto;
+    font-family: 'Comfortaa-Medium';
+    font-size: 16px;
+    width: 100%;
+    color: black;
+    background-color: rgb(210, 208, 208);
+}
+/* ***************start of header******************** */
+header{
+    position: fixed;
+    background: rgb(0, 3, 20);
+    color : white;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Comfortaa-Light';
+    z-index: 10;
+    border-bottom: 3px solid white;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header nav{
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+    background-color: rgb(169, 178, 224);
+    padding: 5px;
+    border-radius: 20px;
+}
+header nav:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+header a:hover{
+    color: black;
+    transition: 1s;
+}
+/* *******************part of different options*********************** */
+.options{
+   line-height: 150px;
+    text-align: center;
+}
+ .under_mission{
+    
+    border: 1px solid black;
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+#under{
+    width: 250px;
+   height: 40px;
+   margin-left: auto;
+   margin-right: auto;
+ 
+}
+#types_of_options .display{
+    margin-top: 10px;
+display: grid;
+gap: 30px;
+justify-content: center;
+
+}
+#types_of_options .option1,#types_of_options .option2,#types_of_options .option3,#types_of_options .option4 { 
+  
+    width: 150px;
+    height: 150px;
+    border: black;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    box-shadow:  0px 0px 10px 0px  rgba(0, 0, 0, 0.801);  
+}
+#types_of_options img{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+/* ************partof footer************** */
+#last_footer{
+    width: 100%;
+     height:240px; 
+    background: rgb(0, 3, 20);
+}
+#last_footer .display{
+    display: flex;
+    margin:50px; 
+    justify-content: space-between;
+    color: white;
+}
+#last_footer .logo{
+    width: 20px;
+    height:20px;
+}
+#last_footer .list{
+    display: grid;
+    grid-gap: 10px;
+}
+#last_footer nav{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+.logo_one,.list{
+     margin-top: 70px;
+}
+#last_footer p{
+    text-decoration: underline;
+}
+/****************media queries********************* */
+@media (max-width:598px){
+    #last_footer .display{
+        display: grid;
+        grid-row-gap: 0px;
+       justify-content:center; 
+  }
+  #last_footer nav{
+      width: 90px;
+    }
+#last_footer{
+        height: 550px;  
+  }
+}

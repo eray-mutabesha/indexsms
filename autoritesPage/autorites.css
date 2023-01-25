@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('Comfortaa-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('Comfortaa-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Medium';
+    src: url('Comfortaa-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('Comfortaa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    src: url('Comfortaa-SemiBold.ttf') format('truetype');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Comfortaa-Medium';
+    font-size: 16px;
+    width: 100%;
+    color: black;
+    background-color: rgb(210, 208, 208);
+}
+/* ***************start of header******************** */
+header{
+    position: fixed;
+    top: 0px;
+    background: rgb(0, 3, 20);
+    color : white;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Comfortaa-Light';
+     z-index: 10; 
+    border-bottom: 3px solid white;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header nav{
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+    background-color: rgb(169, 178, 224);
+    padding: 5px;
+    border-radius: 20px;
+}
+header nav:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+header a:hover{
+    color: black;
+    transition: 1s;
+}
+/* **************************autorities*********************************** */
+#autre_autorite{
+position: relative;
+top: 40px;
+}
+.image-zoom{
+    width: fit-content;
+    clip-path: ellipse(47% 47%);
+    margin: auto;
+}
+#autre_autorite .grid{
+     margin-top: 40px;  
+    }
+#autre_autorite h6{
+    color: rgb(1, 7, 60);
+    margin-top: 10px;
+}
+#autre_autorite img{
+    width: 150px;
+    height: 150px;
+    border: black;
+    background-color:white;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+#autre_autorite img:hover{
+    transform: scale(1.1);
+}
+#autre_autorite .display{
+    width: 250px;
+    height: 250px;
+    border: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px 0px  rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+ #autre_autorite h2{
+    margin-top: 20px; 
+} 
+.titre h5{
+    border: 1px solid black;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#autre_autorite .zero,#autre_autorite .one,#autre_autorite .two,#autre_autorite .zero1{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 30px; 
+}
+#autre_autorite .none{
+    width: 250px;
+    border: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px 0px  rgba(0, 0, 0, 0.486);
+    text-align: center;
+    opacity: 0; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* ************partof footer************** */
+#last_footer{
+    margin-top: 80px;
+    width: 100%;
+     height:240px; 
+    background: rgb(0, 3, 20);
+}
+#last_footer .display{
+    display: flex;
+   width: 100%;
+   justify-content: space-around;
+    color: white;
+}
+#last_footer .logo{
+    width: 20px;
+    height:20px;
+}
+#last_footer h6{
+    color: white;
+}
+#last_footer .list{
+    color: white;
+    display: grid;
+    grid-gap: 10px; 
+}
+#last_footer nav{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+}
+.logo_one,.list{
+     margin-top: 70px;
+}
+#last_footer p{
+    text-decoration: underline;
+}
+
+/************PART OF MEDIA QUERIES***************/
+@media (max-width:820px){
+    #autorite .display,#autre_autorite .display{
+        width: 250px;
+        height: 250px;
+        }
+    #autorite img,#autre_autorite img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        }
+    }
+@media (max-width:700px){
+    #autre_autorite .zero1{
+        column-gap: 0px;
+        }
+    }
+    @media (max-width:598px){
+#autre_autorite .grid{
+           margin-top: 15px;
+                }
+#autre_autorite h6{
+           color: rgb(1, 7, 60);
+           margin-top: 5px;
+            }
+#mission_section{
+           margin: 40px;
+}
+.titre{
+   text-align: center;
+} 
+#autre_autorite .one,#autre_autorite .two,#autre_autorite .zero,#autre_autorite{
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+}
+#autre_autorite .zero1{
+    display: grid;
+     height: 50px; 
+}
+#autre_autorite .zero{
+     height:200px; 
+}
+#autre_autorite h2{
+    margin-top: 0px;
+} 
+#autre_autorite .display,#autre_autorite .none{
+    width: 200px;
+    height: 200px; 
+}
+#autre_autorite img{
+         width: 130px;
+         height: 130px;
+    }
+#last_footer .display{
+          display: grid;
+          grid-row-gap: 0px;
+         justify-content:center; 
+    }
+    #last_footer nav{
+        width: 90px;
+      }
+#last_footer{
+    height: 550px;  
+    }
+      }
+@media (max-width:425px){
+header h2{
+font-size: 20px;
+}
+      }
+
+
+     
+     
+    
