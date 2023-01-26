@@ -67,7 +67,29 @@ header a:hover{
     color: black;
     transition: 1s;
 }
+/* ******************************************** */
+.up{
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    border: none;
+    width: fit-content;
+     padding: 5px; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+     color: white; 
+}
+.up img{
+    height: 20px;
+    height: 20px;
+}
+.up:hover{
+    background-color: rgb(83, 93, 151);
+    transition: 1s;
+}
 /* **************************autorities*********************************** */
+
 #autre_autorite{
 position: relative;
 top: 40px;
