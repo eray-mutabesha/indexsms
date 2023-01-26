@@ -474,7 +474,7 @@ font-size: 20px;
         overflow: hidden;
         flex-direction: row;
         animation-name: options;
-        animation-duration: 30s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 @keyframes options {
@@ -519,5 +519,7 @@ font-size: 20px;
         .option3{
             display: none;
         }
-      }
-    
+        #types_of_options .display{
+            animation: none;
+        }
+    }
